@@ -20,7 +20,7 @@ const Services = () => {
     <span style={{color: darkMode? 'white' : ''}}>My Awesome</span>
     <span>services</span>
     <span style={{color: darkMode? 'white' : ''}}>
-        I am a frontend developer and you can higher me for ur visual website
+        I am a frontend developer and you can higher me for ur visual website.
         <br/>
         I do any form of website design using html,css,javascript,bootstrap and react.js
     </span>

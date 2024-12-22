@@ -27,8 +27,9 @@
 }
 
 .awesome> :nth-child(3){
-    color: var(--gray);
-    font-size: 14px;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 700;
     margin-top: 1rem; 
 }
 
@@ -60,12 +61,20 @@
 
 @media screen and (max-width: 480px){
      .services{
-        margin-top: 0;
+        margin-top: 50%;
         flex-direction: column;
         gap: 5rem;
         height: 60rem;
         padding: 0;
      }
+
+     .awesome> :nth-child(3){
+        
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 1rem; 
+    }
+
      .cards{
         display: flex;
         flex-direction: column;
