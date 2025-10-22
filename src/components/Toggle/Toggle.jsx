@@ -15,7 +15,7 @@ const Toggle = () => {
         theme.dispatch({type: 'toggle'})
     }
   return (
-   <div className={`toggle ${darkMode ? 'dark' : ''}`} onClick={handleClick}>
+   <div className={`theme-toggle ${darkMode ? 'dark' : ''}`} onClick={handleClick}>
          <Moon/>
          <Sun/>
          <div className="t-button"></div>
