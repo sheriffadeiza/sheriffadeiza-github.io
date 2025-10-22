@@ -19,13 +19,13 @@ const Testimonial = () => {
         {
             img: profilepic1, 
             review:
-        "He is mervelous, his designs are upnotch, hope to work with him more often."
+        "He is mervelous, his designs are topnotch, hope to work with him more often."
      },
 
         {
             img: profilepic2, 
             review:
-            "He is mervelous, his designs are upnotch, hope to work with him more often."
+            "He is mervelous, his designs are topnotch, hope to work with him more often."
 
 
 
@@ -34,7 +34,7 @@ const Testimonial = () => {
         {
             img: profilepic3, 
             review:
-            "He is mervelous, his designs are upnotch, hope to work with him more often."
+            "He is mervelous, his designs are topnotch, hope to work with him more often."
 
 
         },
@@ -42,7 +42,7 @@ const Testimonial = () => {
         { 
             img: profilepic4, 
             review:
-            "He is mervelous, his designs are upnotch, hope to work with him more often."
+            "He is mervelous, his designs are topnotch, hope to work with him more often."
 
 
 

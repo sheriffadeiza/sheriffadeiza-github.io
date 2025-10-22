@@ -15,13 +15,10 @@ const Toggle = () => {
         theme.dispatch({type: 'toggle'})
     }
   return (
-   <div className="toggle" onClick={handleClick} >
+   <div className={`toggle ${darkMode ? 'dark' : ''}`} onClick={handleClick}>
          <Moon/>
          <Sun/>
-         <div className="t-button"  style= {darkMode? {left: '9.5rem'}: {right: '55.73rem'}}> 
-        
-        
-        </div>
+         <div className="t-button"></div>
    </div>
   )
 }

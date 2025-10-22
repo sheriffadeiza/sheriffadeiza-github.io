@@ -42,7 +42,7 @@ function Navbar() {
             <Link spy={true}  to='Testimonial' smooth={true}>
             <li>Testimonials</li>
             </Link>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <button className="nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>
        </ul>

@@ -57,77 +57,92 @@ nav ul li:hover{
 
 
 .n-button{
-   margin-top: 40px;
+   margin-top: 30px;
     background-color: black;
    
 }
-.n-right .nav-btn{
-   
+  .n-right .nav-btn,
+  .n-right .nav-close-btn {
     cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
     font-size: 1.8rem;
     color: #fff;
-    visibility: hidden;
-   
-    
-  
-    
-   
+    display: none;
+    padding: 5px;
+    margin-right: 1rem;
   }
   
 
-@media only screen and (max-width: 1024px){
-
-   .n-right .nav-btn{
-        visibility: visible;
-        font-size: 20px;
-        margin-right: 20rem; 
-        margin-left: 50%;    
-        
+@media  screen and (max-width: 1024px){
+   .n-right  .nav-close-btn{
+        display: block;
+        font-size: 24px;
+        position: fixed;
+        right: 2rem;
+        top: 1rem;
+        z-index: 10;
       }
- 
-      
+
+    .n-right .nav-btn {
+        display: block;
+        font-size: 24px;
+        position: fixed;
+        right: 2rem;
+        top: 1rem;
+        z-index: 10;
+    }
      
     nav{
-    position: fixed;
-     top: 0;
-     right: 70px;
-     height: 50%;
-     width: 50%;
-     display: flex;
-     color: white;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     gap: 1.5rem;
-     background-color: #333;
-     transition: 1s;
-     transform: translateY(-100vh);
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        background-color: #333;
+        transition: 0.5s ease-in-out;
+        transform: translateX(100%);
+        padding: 2rem;
     }
 
     nav> ul{
         display: block;
-        margin-right: 50%;
-        margin-top: 50px;
-        
+        width: 100%;
+        margin-top: 60px;
     }
 
     nav ul li{
-        margin-top: 30px;
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
     }
    
-   
+    /* When nav is open */
     .responsive_nav{
-        transform: none;
-      }
-    
-      .nav-close-btn {
-         position: absolute;
-         top: 2rem;
-         right: -5rem;
-      }
+        transform: translateX(0);
+    }
+
+    /* Hide hamburger and show close button when nav is open */
+    .responsive_nav ~ .nav-btn {
+        display: none;
+    }
+
+    .responsive_nav ~ .nav-close-btn {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        font-size: 24px;
+        color: #fff;
+        z-index: 11;
+    }
 
 
     .n-button{
@@ -147,3 +162,6 @@ nav ul li:hover{
     
 }
 };
+
+
+

@@ -19,13 +19,19 @@ const Works = () => {
     <span style={{color: darkMode? 'white' : '' }}>Works for All these</span>
     <span>Brands & Clients</span>
     <span style={{color: darkMode? 'white' : ''}}>
-        Worked on a real estate website frontend view
+        Worked on a Real Estate website frontend view
         <br/>
-        Worked on a music website frontend view
+        Worked on an E-commerce site,
+        https://frontend-ecommerceclothing.vercel.app/
         <br />
         Worked on a Login page that allows only 4 users login using javascript
         <br /> 
-        Worked on a phamaceutical website view.
+        Worked on a Crypto app,
+        https://evolve2p-web-nine.vercel.app/
+        <br/>
+        Worked on a Football app,
+        https://project-neon-rho.vercel.app/
+
     </span>   
     <button className='button s-button'>Hire me</button> 
     <div className='blur s-blur2' style={{background: "var(--purple)"}}></div>

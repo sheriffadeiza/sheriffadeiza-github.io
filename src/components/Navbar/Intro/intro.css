@@ -3,7 +3,8 @@
     height: 100vh;
     align-items: center;
     margin-top: 5rem;
-    padding-left: 79px;
+    padding-left: 50px;
+    
 }
 
 
@@ -73,26 +74,131 @@
     filter:blur(72px) ;
 }
 
+@media screen and (max-width: 1280px){
+    .intro{
+        
+        margin-left:-100px;
+        margin-top:20%;
+    }
+
+     .i-name>:nth-child(1){
+        
+        font-weight: 600;
+        font-size: 120px;
+    }
+
+     .i-button{
+      
+       margin-left: 45%;
+        margin-top: 80px;
+        
+    }
+
+
+}
+
 @media screen and (max-width: 1024px){
   
     .intro{
-        height: 30rem;
-        padding-left: 0px;
+        align-items:left;
+        margin-left:-30px;
+        margin-top:20%;
+       
     }
 
     .i-name>:nth-child(1){
         
         font-weight: bold;
-        font-size: 5rem;
+        font-size: 100px;
+    }
+
+    .i-name>:nth-child(2){
+        
+        font-weight: 600;
+        font-size: 70px;
+    }
+
+    .i-name>:nth-child(3){
+        
+        font-weight: 500;
+        font-size: 20px;
     }
 
     .i-button{
-       
-       margin-left: 30%;
+      
+       margin-left: 40%;
         margin-top: 80px;
         
+    }
+
+    .i-icons{
+        margin-left: -80px;
     }
     
   }
 
+
+  @media screen and (max-width: 780px){
+
+ .intro{
+    padding-left:none;
+    margin-left:-50px;
+ }
+
+      .i-name>:nth-child(1){
+        
+        font-weight: 500;
+        font-size: 70px;
+    }
+
+      .i-name>:nth-child(2){
+        
+        font-weight: 400;
+        font-size: 50px;
+    }
+
+      .i-name>:nth-child(3){
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .i-icons{
+        margin-left: -50px;
+    }
+    
+  }
+
+  @media screen and (max-width: 480px){
+
+ 
+
+      .i-name>:nth-child(1){
+        
+        font-weight: 400;
+        font-size: 50px;
+    }
+
+      .i-name>:nth-child(2){
+        
+        font-weight: 200;
+        font-size: 30px;
+    }
+
+      .i-name>:nth-child(3){
+        font-weight: 500;
+        font-size: 12px;
+    }
+    
+     .i-button{
+      
+       margin-left:140px;
+        margin-top: 80px;
+        
+    }
+
+    .i-icons{
+        margin-left: -20px;
+    }
+    
+  }
 

@@ -12,16 +12,31 @@
 
 }
 
-.w-mainCircle{
-    left: 9rem ;
-    position: relative;
-    width: 18rem;
-    height: 18rem;
-    border-radius: 100%;
-    box-shadow: var(--smboxShadow);
-    top: 2rem;
-    background: white;
+.w-mainCircle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 15s linear infinite; /* 🌀 Add this */
 }
+
+/* Spin animation keyframes */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .w-mainCircle>*{
     position: absolute;
@@ -85,6 +100,14 @@
     left: 18rem;
     top: 8rem;
 }
+
+
+@media screen and (max-width: 1280px){
+    .works{
+        flex-direction: column;
+    }
+}
+
 
 @media screen and (max-width: 480px){
     .works{
