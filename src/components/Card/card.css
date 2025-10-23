@@ -46,3 +46,11 @@
        right: 2rem;
 }
 }
+
+@media screen and (max-width: 360px) {
+    .card{
+       width: 120%;
+       justify-content: center;
+       right: 2rem;
+}
+}
