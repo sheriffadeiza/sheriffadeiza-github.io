@@ -50,7 +50,7 @@ const Works = () => {
                 <img src={Amazon} alt="" />
             </div>
             <div className="w-secCircle">
-                <img src={Shopify} alt="" />
+                <img src={Shopify} alt="" className="shopify" />
             </div>
             <div className="w-secCircle">
                 <img src={Facebook} alt="" />

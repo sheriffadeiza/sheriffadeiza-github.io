@@ -202,3 +202,24 @@
     
   }
 
+
+  @media screen and (max-width: 360px){
+
+ 
+   .intro{
+    padding-top: 50px;
+   }
+    
+     .i-button{
+      
+       margin-left:75px;
+        margin-top: 80px;
+        
+    }
+
+    .i-icons{
+        margin-left: -20px;
+    }
+    
+  }
+

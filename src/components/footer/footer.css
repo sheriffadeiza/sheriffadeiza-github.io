@@ -4,7 +4,7 @@
     margin: -0.5rem -3.5rem;
     position: relative ;
     margin-top: -7rem;
-
+    
 }
 
 .f-content {
@@ -27,4 +27,20 @@ gap: 2rem;
     .f-content{
         transform:scale(.5)
     }
+
+    span{
+        font-size:15px;
+    }
+}
+
+@media screen and (max-width: 360px){
+   .footer{
+    margin-top: 40%;
+    height: 10rem;
+   ;
+   }
+
+   span{
+     font-size: 35px
+   }
 }

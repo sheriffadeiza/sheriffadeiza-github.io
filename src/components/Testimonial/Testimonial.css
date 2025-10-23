@@ -92,3 +92,23 @@
         height: 70px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .testimonial span{
+        font-size: 20px; /* Adjust font size for smaller screens */
+        font-weight: 400;
+        text-wrap: balance;
+    }
+
+    .testimonial img {
+        width: 100px; /* Smaller image size for mobile */
+        height: 100px; /* Smaller image size for mobile */
+        margin-top: -100px;
+    }
+
+    
+
+    .t-heading span {
+        font-size: 20px; /* Adjust heading font size */
+    }
+}

@@ -45,3 +45,23 @@ textarea{
         gap: 2rem;
     }
 }
+
+
+@media screen and (max-width: 360px) {
+    .contact-form {
+        height: auto; /* Allow height to adjust based on content */
+        gap: 1.5rem; /* Adjusted gap for smaller screens */
+    }
+
+    .c-right .user {
+        width: 100%; /* Full width for input fields */
+    }
+
+    .c-right > form {
+        gap: 1rem; /* Adjusted gap for smaller screens */
+    }
+
+    .c-blur1 {
+        left: 2rem; /* Adjusted position for smaller screens */
+    }
+}
