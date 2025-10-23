@@ -1,9 +1,9 @@
 import React from 'react'
 import './intro.css'
-import Github from '../../../img/github.png';
-import LinkedIn from '../../../img/linkedin.png';
-import Instagram from '../../../img/instagram.png'
-import { themeContext } from '../../../context';
+import Github from '../../img/github.png';
+import LinkedIn from '../../img/linkedin.png';
+import Instagram from '../../img/instagram.png'
+import { themeContext } from '../../context';
 import { useContext } from 'react';
 
 
