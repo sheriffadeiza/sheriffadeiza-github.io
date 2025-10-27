@@ -161,7 +161,7 @@
 
 @media screen and (max-width: 360px) {
     .works {
-        margin-top: 200%;
+        margin-top: 120%;
         flex-direction: column;
         height: auto;
         padding: 0.5rem;

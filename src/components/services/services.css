@@ -219,11 +219,11 @@
    .cards div:nth-child(2){
     width:100%;
    margin-left:180px;
-   margin-top:50%;
+   margin-top:58%;
 }
 
    .cards div:nth-child(3){
    margin-left:-170px;
-   margin-top:100%;
+   margin-top:115%;
 }
 }

@@ -2,10 +2,13 @@
     display: flex;
     align-items: center;
     margin: -0.5rem -3.5rem;
+    
     position: relative ;
     margin-top: -7rem;
     
 }
+
+
 
 .f-content {
     position: absolute;
@@ -13,7 +16,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 6rem;
     color: white;
     gap: 4rem;
 }
@@ -21,6 +24,7 @@
 .f-icons{
 display: flex;
 gap: 2rem;
+margin-bottom: 20px;
 }
 
 @media screen and (max-width: 480px){
@@ -36,11 +40,15 @@ gap: 2rem;
 @media screen and (max-width: 360px){
    .footer{
     margin-top: 40%;
-    height: 10rem;
+    height: 15rem;
    ;
    }
 
    span{
      font-size: 35px
+   }
+
+   .f-icons{
+    margin-top: 50px;
    }
 }
