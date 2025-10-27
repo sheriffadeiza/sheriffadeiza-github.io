@@ -212,7 +212,7 @@
   }
 
    .cards div:nth-child(1){
-   margin-left:-209px;
+   margin-left:-200px;
    margin-top:-10%;
 }
 
@@ -223,7 +223,7 @@
 }
 
    .cards div:nth-child(3){
-   margin-left:-170px;
+   margin-left:-160px;
    margin-top:115%;
 }
 }
