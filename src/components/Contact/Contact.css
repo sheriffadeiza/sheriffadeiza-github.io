@@ -53,6 +53,8 @@ textarea{
         gap: 1.5rem; /* Adjusted gap for smaller screens */
     }
 
+    
+
     .c-right .user {
         width: 100%; /* Full width for input fields */
     }
