@@ -139,6 +139,7 @@ nav ul li:hover{
     /* Hide hamburger and show close button when nav is open */
     .responsive_nav ~ .nav-btn {
         display: none;
+        margin-right: 20%;
        
     }
 
