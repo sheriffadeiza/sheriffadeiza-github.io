@@ -99,7 +99,7 @@ nav ul li:hover{
     nav{
         position: fixed;
         top: 10px;
-        left: -100%;
+        left: -150%;
         width: 150px; 
         height: 20vh;
         display: flex;
