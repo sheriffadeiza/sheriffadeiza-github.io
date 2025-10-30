@@ -101,15 +101,15 @@ nav ul li:hover{
         top: 20px;
         width: 150px; 
         height: 20vh;
-        display: flex;
+        display: block;
         margin-left: -200.8px;
         color: white;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: right;
         gap: 1rem;
         background-color: black;
-        transition: 0.6s ease-in-out;
+        transition: 0.5s ease-in-out;
         transform: translateX(1100%);
         padding: 2rem;
     }
