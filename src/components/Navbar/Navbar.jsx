@@ -13,9 +13,18 @@ import { FaBars, FaTimes } from "react-icons/fa";
 function Navbar() {
 
   const navRef = useRef();
+     
          const showNavbar = () => {
-              navRef.current.classList.toggle("responsive_nav");
+             if (!navRef.current) return;
+             navRef.current.classList.toggle("responsive_nav");
          }
+
+         const closeNavbar = () => {
+             if (!navRef.current) return;
+             navRef.current.classList.remove("responsive_nav");
+         }
+
+
   return (
 <div className="n-wrapper" id='Navbar'>
     <div className="n-left"> 
@@ -42,7 +51,7 @@ function Navbar() {
             <Link spy={true}  to='Testimonial' smooth={true}>
             <li>Testimonials</li>
             </Link>
-            <button className="nav-close-btn" onClick={showNavbar}>
+            <button className="nav-close-btn" onClick={closeNavbar}>
                     <FaTimes />
                 </button>
        </ul>
