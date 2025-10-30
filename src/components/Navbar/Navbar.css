@@ -130,7 +130,7 @@ nav ul li:hover{
    
     /* When nav is open */
     .responsive_nav{
-        transform: translateX(-50px);
+        transform: translateX(-40px);
     }
 
     /* Hide hamburger and show close button when nav is open */
