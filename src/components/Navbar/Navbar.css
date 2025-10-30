@@ -181,7 +181,7 @@ nav ul li:hover{
    }
 }
 
-@media  screen and (max-width: 780px){
+@media  screen and (max-width: 360px){
     .n-wrapper{
         width: 100%;
     }
