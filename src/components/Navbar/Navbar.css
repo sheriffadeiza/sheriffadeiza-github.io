@@ -104,7 +104,7 @@ nav ul li:hover{
         width: 150px; 
         height: 40vh;
         display: flex;
-        margin-right: 500%;
+        margin-right: 200%;
         color: white;
         flex-direction: column;
         
@@ -133,7 +133,7 @@ nav ul li:hover{
    
     /* When nav is open */
     .responsive_nav{
-        transform: translateX(0);
+        transform: translateX(10%);
     }
 
     /* Hide hamburger and show close button when nav is open */
