@@ -77,103 +77,88 @@ nav ul li:hover{
   }
   
 
-@media  screen and (max-width: 1024px){
-   .n-right  .nav-close-btn{
-        display: block;
-        font-size: 24px;
-        position: fixed;
-        right: 2rem;
-        top: 1rem;
-        z-index: 10;
-      }
 
+@media screen and (max-width: 1024px){
+
+    /* mobile: show hamburger by default, hide close (close is inside <nav>) */
     .n-right .nav-btn {
         display: block;
         font-size: 24px;
         position: fixed;
-        right: 15rem;
+        right: 1rem;
         top: 1rem;
-        z-index: 10;
-    }
-     
-    
-nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;               /* panel width */
-    height: 100vh;              /* full height for mobile panel */
-    display: flex;
-    color: #fff;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 1rem;
-    background-color: #111;     /* dark panel color */
-    transition: transform 0.45s ease-in-out;
-    transform: translateX(100%);/* start off-screen to the right */
-    padding: 2rem;
-    box-sizing: border-box;
-    z-index: 1000;
-}
-
-nav > ul{
-    display: block;
-    width: 100%;
-    margin: 4rem 0 0 0;         /* push list down from top */
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li{
-    margin: 0;
-    padding: 0.8rem 0;          /* tappable area for each item */
-    width: 100%;
-    font-size: 1.125rem;        /* ~18px */
-    color: #fff;
-}
-
-/* When nav is open */
-nav.responsive_nav{
-    transform: translateX(0);   /* slide into view */
-}
-
-    /* Hide hamburger and show close button when nav is open */
-    .responsive_nav ~ .nav-btn {
-        display: none;
-       
+        z-index: 1300;
+        color: #000;
+        background: transparent;
+        border: none;
     }
 
-    .responsive_nav ~ .nav-close-btn {
-        display: block;
+    .n-right .nav-close-btn {
+        display: none; /* shown only when nav is open */
+    }
+
+    /* slide-in panel from right (hidden by default) */
+    nav{
         position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+        background-color: #111;
+        transition: transform 0.45s ease-in-out;
+        transform: translateX(100%); /* offscreen */
+        padding: 2rem;
+        box-sizing: border-box;
+        z-index: 1200;
+    }
+
+    nav > ul{
+        display: block;
+        width: 100%;
+        margin: 4rem 0 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav ul li{
+        margin: 0;
+        padding: 0.8rem 0;
+        width: 100%;
+        font-size: 1.125rem;
+        color: #fff;
+    }
+
+    /* OPEN state: nav slides into view */
+    nav.responsive_nav {
+        transform: translateX(0);
+    }
+
+    /* when nav is open hide the hamburger button placed after nav in the DOM */
+    nav.responsive_nav + .nav-btn {
+        display: none !important;
+    }
+
+    /* show the close (times) button that lives inside the nav when open */
+    nav.responsive_nav .nav-close-btn {
+        display: block !important;
+        position: absolute;
         top: 1rem;
-        right: 10rem;
+        right: 1rem;
         font-size: 24px;
         color: #fff;
-        z-index: 11;
+        z-index: 1301;
+        background: transparent;
+        border: none;
     }
 
-
-    .n-button{
-        margin-left: -40px;
-       margin-top: -20px;
-       margin-bottom: 100px;
-
-    }
-
-    .n-wrapper{
-        left: 0;
-      
-        
-    }
-
-.n-left{
-    
-    padding-left: 20px;
-    
-}
-
+    /* small layout adjustments */
+    .n-left { padding-left: 20px; }
+    .n-button { margin-right: 7rem; margin-bottom: 100px; }
 
 }
 
