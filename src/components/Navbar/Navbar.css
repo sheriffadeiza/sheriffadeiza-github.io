@@ -110,7 +110,7 @@ nav ul li:hover{
         gap: 1rem;
         background-color: black;
         transition: 0.6s ease-in-out;
-        transform: translateX(150%);
+        transform: translateX(-100%);
         padding: 2rem;
     }
 
