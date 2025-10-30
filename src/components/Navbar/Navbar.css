@@ -96,47 +96,42 @@ nav ul li:hover{
         z-index: 10;
     }
      
-    
-nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;               /* panel width */
-    height: 100vh;              /* full height for mobile panel */
-    display: flex;
-    color: #fff;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 1rem;
-    background-color: #111;     /* dark panel color */
-    transition: transform 0.45s ease-in-out;
-    transform: translateX(100%);/* start off-screen to the right */
-    padding: 2rem;
-    box-sizing: border-box;
-    z-index: 1000;
-}
+    nav{
+        position: fixed;
+        top: 10px;
+        right: 100px;
+        width: 150px; 
+        height: 40vh;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        background-color: black;
+        transition: 0.6s ease-in-out;
+        transform: translateX(200%);
+        padding: 2rem;
+    }
 
-nav > ul{
-    display: block;
-    width: 100%;
-    margin: 4rem 0 0 0;         /* push list down from top */
-    padding: 0;
-    list-style: none;
-}
+    nav> ul{
+        display: block;
+        margin-top: -50px;
+        margin-left: -30%;
+    }
 
-nav ul li{
-    margin: 0;
-    padding: 0.8rem 0;          /* tappable area for each item */
-    width: 100%;
-    font-size: 1.125rem;        /* ~18px */
-    color: #fff;
-}
-
-/* When nav is open */
-nav.responsive_nav{
-    transform: translateX(0);   /* slide into view */
-}
+    nav ul li{
+        margin-top: 20px;
+        margin: none;
+        gap: 0;
+        font-size: 20px;
+      
+    }
+   
+    /* When nav is open */
+    .responsive_nav{
+        transform: translateX(50px);
+    }
 
     /* Hide hamburger and show close button when nav is open */
     .responsive_nav ~ .nav-btn {
@@ -148,7 +143,7 @@ nav.responsive_nav{
         display: block;
         position: fixed;
         top: 1rem;
-        right: 10rem;
+        right: 2rem;
         font-size: 24px;
         color: #fff;
         z-index: 11;
@@ -173,9 +168,9 @@ nav.responsive_nav{
     padding-left: 20px;
     
 }
+};
 
 
-}
 
 @media  screen and (max-width: 780px){
    .nav{
